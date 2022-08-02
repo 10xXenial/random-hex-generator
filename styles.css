@@ -3,7 +3,8 @@
     padding: 0;
 }
 body {
-    height: 100vh;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,4 +15,14 @@ body {
     font-size: 150px;
     font-family: 'Roboto', sans-serif;
     user-select: none
+}
+@media (max-width: 700px) {
+    .hex-code-display {
+        font-size: 100px;
+    }
+}
+@media (max-width: 500px) {
+    .hex-code-display {
+        font-size: 60px;
+    }
 }
