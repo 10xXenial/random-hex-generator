@@ -25,7 +25,6 @@ const changeHex = function() {
 }
 
 changeHex()
-alert("Note: Click anywhere except near to the hex code to generate a new one. The area around the hex code is reserved so copying can be easier")
 body.addEventListener('click', changeHex)
 
 
