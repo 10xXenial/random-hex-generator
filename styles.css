@@ -11,5 +11,6 @@ body {
 .hex-code-display {
     color: white;
     font-size: 150px;
-    font-family: 'Fira Sans', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    padding: 80px 200px;
 }
