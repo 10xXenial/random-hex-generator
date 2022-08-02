@@ -23,7 +23,9 @@ const changeHex = function() {
     body.style.backgroundColor = randomHex
 
 }
-
+let vh = window.innerHeight * 0.01;
+console.log(vh)
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 changeHex()
 body.addEventListener('click', changeHex)
 
